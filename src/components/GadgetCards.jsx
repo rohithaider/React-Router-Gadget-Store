@@ -23,11 +23,10 @@ export default function GadgetCards() {
 
   return (
     <div className="grid grid-cols-3 gap-2">
-        <h1>test: {gadgetData.length}</h1>
         
-      {/* {gadgetData.map((gadget) => (
+      {gadgetData.map((gadget) => (
         <Card key={gadget.product_id} gadget={gadget} />
-      ))} */}
+      ))}
     </div>
   );
 }

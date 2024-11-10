@@ -17,17 +17,17 @@ const router = createBrowserRouter([
       {
         path:"/",
         element: <Homepage/>,
-        loader: ()=>fetch('/public/categories.json'),
+        loader: ()=>fetch('/assets/categories.json'),
         children:[
           {
             path:"/",
             element:<GadgetCards/>,
-            loader: ()=>fetch('/public/gadgets.json'),
+            loader: ()=>fetch('/assets/gadgets.json'),
           },
           {
             path:"category/:category",
             element:<GadgetCards/>,
-            loader: ()=>fetch('/public/gadgets.json'),
+            loader: ()=>fetch('/assets/gadgets.json'),
           }
         ]
 
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       {
         path:"gadget/:product_id",
         element:<DetailsPage/>,
-        loader: ()=>fetch('/public/gadgets.json'),
+        loader: ()=>fetch('/assets/gadgets.json'),
 
       },
 

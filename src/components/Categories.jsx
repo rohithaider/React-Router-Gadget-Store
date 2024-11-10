@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 export default function Categories({ categories }) {
-  if (!categories || !categories.length) return <p>Loading categories...</p>;
-
   return (
     <div
       role="tablist"
@@ -13,7 +11,9 @@ export default function Categories({ categories }) {
           key={category.category}
           to={`/category/${category.category}`}
           role="tab"
-          className={({isActive})=>`btn w-full rounded-2xl ${isActive?'tab-active':''}`}
+          className={({ isActive }) =>
+            `btn w-full rounded-2xl ${isActive ? "tab-active" : ""}`
+          }
         >
           {category.category}
         </NavLink>
