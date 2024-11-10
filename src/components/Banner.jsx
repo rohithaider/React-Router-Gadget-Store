@@ -1,10 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 
+import Heroimage from "./Heroimage";
 export default function Banner(){
     const location = useLocation();
     const isHomePage = location.pathname ==="/"
     return (
-        <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl">
+        <>
+        <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative">
         <div className="hero-content text-center text-white">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold ">
@@ -15,9 +17,13 @@ export default function Banner(){
               next level. From smart devices to the coolest accessories, we have
               it all!
             </p>
-            {isHomePage && <Link to="dashboard"><button className="btn rounded-2xl bg-white text-[#9538E2]">Shop Now</button></Link>}
+            
+            {isHomePage && <Link to="dashboard"><button className="btn rounded-2xl bg-white text-[#9538E2] mb-10">Shop Now</button></Link>}
           </div>
         </div>
+    
       </div>
+      <Heroimage/></>
+      
     );
 }
