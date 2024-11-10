@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Banner(){
     const location = useLocation();
@@ -15,7 +15,7 @@ export default function Banner(){
               next level. From smart devices to the coolest accessories, we have
               it all!
             </p>
-            {isHomePage && <button className="btn btn-primary rounded-2xl bg-white text-[#9538E2]">Shop Now</button>}
+            {isHomePage && <Link to="dashboard"><button className="btn btn-primary rounded-2xl bg-white text-[#9538E2]">Shop Now</button></Link>}
           </div>
         </div>
       </div>
