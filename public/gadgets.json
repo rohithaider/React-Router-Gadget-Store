@@ -1,0 +1,166 @@
+[
+    {
+        "product_id": "P001",
+        "product_title": "Apple iPhone 15 Pro Max",
+        "product_image": "https://m.media-amazon.com/images/I/81fxjeu8fdL._AC_UF1000,1000_QL80_.jpg",
+        "category": "Smartphones",
+        "price": 1299,
+        "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+        "specification": [
+            "6.7-inch Super Retina XDR display",
+            "A17 Bionic chip",
+            "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+            "LiDAR Scanner",
+            "Up to 2TB storage"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P002",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://m.media-amazon.com/images/I/51hqXIAVXAL._AC_UF1000,1000_QL80_.jpg",
+        "category": "Smartphones",
+        "price": 1199,
+        "description": "High performance and superb camera with Samsung Galaxy S23 Ultra.",
+        "specification": [
+            "6.8-inch Dynamic AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "200MP Quad-camera system",
+            "5,000mAh battery",
+            "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "L001",
+        "product_title": "MacBook Pro 14\" M2",
+        "product_image": "https://m.media-amazon.com/images/I/61lYIKPieDL._AC_UF894,1000_QL80_.jpg",
+        "category": "Laptops",
+        "price": 1999,
+        "description": "Powerful and efficient with Apple's M2 chip in the MacBook Pro.",
+        "specification": [
+            "14.2-inch Liquid Retina XDR display",
+            "M2 Pro chip",
+            "16GB unified memory",
+            "512GB SSD storage",
+            "Up to 17 hours battery life"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "L002",
+        "product_title": "Dell XPS 13 Plus",
+        "product_image": "https://m.media-amazon.com/images/I/710EGJBdIML.jpg",
+        "category": "Laptops",
+        "price": 1499,
+        "description": "Compact, powerful, and stylish laptop with Intel's latest technology.",
+        "specification": [
+            "13.4-inch OLED display",
+            "Intel Core i7 12th Gen",
+            "16GB LPDDR5 RAM",
+            "512GB SSD storage",
+            "Integrated Intel Iris Xe Graphics"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "C001",
+        "product_title": "Anker PowerCore 20100mAh",
+        "product_image": "https://images-eu.ssl-images-amazon.com/images/I/71R3FJTgPtL._AC_UL600_SR600,600_.jpg",
+        "category": "Chargers",
+        "price": 79,
+        "description": "High-capacity power bank with fast charging capabilities.",
+        "specification": [
+            "20,100mAh capacity",
+            "Two USB-A output ports",
+            "Fast Charging",
+            "Compact design"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "C002",
+        "product_title": "Samsung 45W Super Fast Charger",
+        "product_image": "https://m.media-amazon.com/images/I/613+ZVmCdSL.jpg",
+        "category": "Chargers",
+        "price": 50,
+        "description": "Super fast wall charger compatible with Galaxy devices.",
+        "specification": [
+            "45W power output",
+            "USB-C connection",
+            "Compact and lightweight",
+            "Compatible with Galaxy devices"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "S001",
+        "product_title": "Apple Watch Series 9",
+        "product_image": "https://people.com/thmb/_MK3vK8h_sJNM78p-oaT1Xb3sOw=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/apple-watch-series-9-midnight-aluminum-case-with-midnight-sport-band-cb25ba1be0db45b9b06a6d5b1015cf4e.jpg",
+        "category": "Smartwatches",
+        "price": 399,
+        "description": "Advanced health and fitness tracking with the Apple Watch Series 9.",
+        "specification": [
+            "Always-on Retina display",
+            "S9 SiP",
+            "Blood Oxygen and ECG apps",
+            "Water resistant to 50 meters"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "S002",
+        "product_title": "Samsung Galaxy Watch 6",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojfzTN9bRUhthpnaefvJtNLK7aHLTK7aHXw&s",
+        "category": "Smartwatches",
+        "price": 349,
+        "description": "Samsung Galaxy Watch with advanced fitness tracking.",
+        "specification": [
+            "1.4-inch Super AMOLED display",
+            "Exynos W930 processor",
+            "ECG monitoring",
+            "Water resistant to 50 meters"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "A001",
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "https://m.media-amazon.com/images/I/41LDnwxTNXL._AC_UF894,1000_QL80_.jpg",
+        "category": "Accessories",
+        "price": 99,
+        "description": "Ergonomic and versatile mouse with precise control.",
+        "specification": [
+            "Ultrafast MagSpeed scrolling",
+            "Ergonomic design",
+            "Works on any surface",
+            "USB-C rechargeable"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "A002",
+        "product_title": "Anker Soundcore Liberty 4",
+        "product_image": "https://gadgetnmusic.com/wp-content/uploads/2023/07/Untitled-design-2023-07-09T005815.642.jpg",
+        "category": "Accessories",
+        "price": 149,
+        "description": "True wireless earbuds with noise-canceling technology.",
+        "specification": [
+            "Active noise cancellation",
+            "Up to 10 hours of playtime",
+            "Bluetooth 5.3",
+            "Wireless charging case"
+        ],
+        "availability": true,
+        "rating": 4.6
+    }
+]
