@@ -1,18 +1,14 @@
-/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 
 export default function Categories({ categories }) {
- 
-  
-  
+  if (!categories || !categories.length) return <p>Loading categories...</p>;
+
   return (
-  
     <div
       role="tablist"
       className="tabs tabs-boxed flex flex-col space-y-2 bg-white border items-center p-6 "
     >
-      {/* {categories.map((category) => (
-        
+      {categories.map((category) => (
         <NavLink
           key={category.category}
           to={`/category/${category.category}`}
@@ -21,9 +17,7 @@ export default function Categories({ categories }) {
         >
           {category.category}
         </NavLink>
-      ))} */}
-
-        <h1>{categories.length}</h1>
+      ))}
     </div>
   );
 }
