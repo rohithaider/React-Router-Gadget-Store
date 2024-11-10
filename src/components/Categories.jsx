@@ -2,6 +2,8 @@
 import { NavLink } from "react-router-dom";
 
 export default function Categories({ categories }) {
+ 
+  
   
   return (
   
@@ -10,14 +12,16 @@ export default function Categories({ categories }) {
       className="tabs tabs-boxed flex flex-col space-y-2 bg-white border items-center p-6 "
     >
       {categories.map((category) => (
-        <NavLink
-          key={category.category}
-          to={`/category/${category.category}`}
-          role="tab"
-          className={({isActive})=>`btn w-full rounded-2xl ${isActive?'tab-active':''}`}
-        >
-          {category.category}
-        </NavLink>
+      <h1>Hello</h1>
+        
+        // <NavLink
+        //   key={category.category}
+        //   to={`/category/${category.category}`}
+        //   role="tab"
+        //   className={({isActive})=>`btn w-full rounded-2xl ${isActive?'tab-active':''}`}
+        // >
+        //   {category.category}
+        // </NavLink>
       ))}
     </div>
   );
