@@ -23,9 +23,10 @@ export default function GadgetCards() {
 
   return (
     <div className="grid grid-cols-3 gap-2">
-      {gadgetData.map((gadget) => (
+        <h1>Deploy test -3</h1>
+      {/* {gadgetData.map((gadget) => (
         <Card key={gadget.product_id} gadget={gadget} />
-      ))}
+      ))} */}
     </div>
   );
 }
