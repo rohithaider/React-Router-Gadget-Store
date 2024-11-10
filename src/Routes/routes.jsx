@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Homepage />,
         loader: async () => {
-          const response = await fetch("/public/categories.json");
+          const response = await fetch("../public/categories.json");
           const categories = await response.json();
           return categories; // Return parsed data
         },
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
             path: "/",
             element: <GadgetCards />,
             loader: async () => {
-              const response = await fetch("/public/gadgets.json");
+              const response = await fetch("../public/gadgets.json");
               const gadgets = await response.json();
               return gadgets; // Return parsed data
             },
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             path: "category/:category",
             element: <GadgetCards />,
             loader: async () => {
-              const response = await fetch("/public/gadgets.json");
+              const response = await fetch("../public/gadgets.json");
               const gadgets = await response.json();
               return gadgets; // Return parsed data
             },
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         path: "gadget/:product_id",
         element: <DetailsPage />,
         loader: async () => {
-          const response = await fetch("/public/gadgets.json");
+          const response = await fetch("../public/categories.json");
           const gadgets = await response.json();
           return gadgets; // Return parsed data
         },
