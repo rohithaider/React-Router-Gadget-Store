@@ -12,9 +12,6 @@ export default function DetailsPage() {
     setData(find);
   }, [allData, product_id]);
 
-  
-  const rating = data.rating || 0; 
-
   return (
     <div>
       <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative">
@@ -36,7 +33,6 @@ export default function DetailsPage() {
               <img
                 src={data.product_image}
                 className="max-w-xs rounded-lg shadow-2xl"
-                alt="Product"
               />
               <div>
                 <h1 className="text-xl font-bold">{data.product_title}</h1>
@@ -56,20 +52,38 @@ export default function DetailsPage() {
                   <CiStar className="text-yellow-700" />
                 </div>
                 <div className="flex items-center">
-                  <div className="rating rating-sm">
-                    {[...Array(5)].map((_, index) => (
-                      <input
-                        key={index}
-                        type="radio"
-                        name="rating-6"
-                        className="mask mask-star-2 bg-orange-400"
-                        checked={index < rating}
-                        readOnly
-                      />
-                    ))}
-                  </div>
-                  <h1>{rating}</h1>
+                <div className="rating rating-sm">
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    className="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    className="mask mask-star-2 bg-orange-400"
+                    defaultChecked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    className="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    className="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    className="mask mask-star-2 bg-orange-400"
+                  />
                 </div>
+                <h1>{data.rating}</h1>
+                </div>
+
+                
               </div>
             </div>
           </div>
