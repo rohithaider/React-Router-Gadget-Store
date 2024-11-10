@@ -7,7 +7,7 @@ export default function Navbar() {
 
   const isHomePage = location.pathname ==="/"
   return (
-    <div className={`navbar ${isHomePage?"bg-[#9538E2] rounded-t-xl text-white":""} bg-base-100`}>
+    <div className={`navbar ${isHomePage?"bg-[#9538E2] rounded-t-xl text-white":"bg-base-100"} `}>
       <div className="navbar-start">
         
         <Link to="/" className="btn btn-ghost text-xl">Gadget&apos;s Heaven</Link>
