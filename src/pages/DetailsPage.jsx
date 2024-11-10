@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {  useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { CiStar } from "react-icons/ci";
 
 export default function DetailsPage() {
@@ -13,10 +13,9 @@ export default function DetailsPage() {
   }, [allData, product_id]);
 
   // This will help to determine the star rating
-  const rating = data.rating || 0; 
+  const rating = data.rating || 0;
 
   return (
-    
     <div>
       <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative">
         <div className="hero-content text-center text-white">
