@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import { NavLink } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 
-export default function Categories({ categories }) {
+export default function Categories() {
  
   
-  
+  const categories = useLoaderData()
   return (
   
     <div
@@ -12,16 +12,15 @@ export default function Categories({ categories }) {
       className="tabs tabs-boxed flex flex-col space-y-2 bg-white border items-center p-6 "
     >
       {categories.map((category) => (
-      <h1>Hello</h1>
         
-        // <NavLink
-        //   key={category.category}
-        //   to={`/category/${category.category}`}
-        //   role="tab"
-        //   className={({isActive})=>`btn w-full rounded-2xl ${isActive?'tab-active':''}`}
-        // >
-        //   {category.category}
-        // </NavLink>
+        <NavLink
+          key={category.category}
+          to={`/category/${category.category}`}
+          role="tab"
+          className={({isActive})=>`btn w-full rounded-2xl ${isActive?'tab-active':''}`}
+        >
+          {category.category}
+        </NavLink>
       ))}
     </div>
   );
