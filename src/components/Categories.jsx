@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
-import { NavLink, useLoaderData } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export default function Categories() {
+export default function Categories({ categories }) {
  
   
-  const categories = useLoaderData()
+  
   return (
   
     <div
       role="tablist"
       className="tabs tabs-boxed flex flex-col space-y-2 bg-white border items-center p-6 "
     >
-      {categories.map((category) => (
+      {/* {categories.map((category) => (
         
         <NavLink
           key={category.category}
@@ -21,7 +21,9 @@ export default function Categories() {
         >
           {category.category}
         </NavLink>
-      ))}
+      ))} */}
+
+        <h1>{categories.length}</h1>
     </div>
   );
 }

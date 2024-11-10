@@ -3,7 +3,7 @@ import { Link, useLocation, useLoaderData, Outlet } from "react-router-dom";
 import Heroimage from "../components/Heroimage";
 import Categories from "../components/Categories";
 export default function Homepage() {
-//   const categories = useLoaderData();
+  const categories = useLoaderData();
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
@@ -40,7 +40,7 @@ export default function Homepage() {
       </div>
       <div className="flex gap-3">
         <div className="w-2/12">
-          <Categories  />
+          <Categories categories={categories} />
         </div>
         <div className="w-10/12">
           <Outlet />
