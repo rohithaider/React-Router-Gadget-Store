@@ -5,6 +5,8 @@ import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { useCart } from "../context/CartContext";
 import { useWishlist } from "../context/WishListContext";
+import toast, { Toaster } from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 export default function DetailsPage() {
   const { product_id } = useParams();
@@ -13,6 +15,7 @@ export default function DetailsPage() {
   const { addToCart } = useCart();
   const { wishlistItems, addToWishlist } = useWishlist();
   const [isPressed, setIsPress] = useState(false);
+  
 
   console.log(wishlistItems);
 
@@ -29,8 +32,19 @@ export default function DetailsPage() {
     setIsPress(true);
   }
 
+  function handleCart(){
+    addToCart(data);
+    
+
+  }
+
   return (
     <div>
+      <Helmet>
+        <title>Details</title>
+        <link rel="icon" type="image/png" href="/public/assets/favicon-16x16.png" />
+      </Helmet>
+      <Toaster />
       <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative s">
         <div className="hero-content text-center text-white">
           <div className="max-w-3xl">
@@ -85,9 +99,8 @@ export default function DetailsPage() {
                   <h1>{rating}</h1>
                 </div>
                 <div className="flex items-center gap-2 mt-2">
-                  <div className="flex items-center bg-[#9538E2] text-white p-2 font-bold rounded-2xl">
-                    <button onClick={() => addToCart(data)} className="  ">
-                      {" "}
+                  <div onClick={handleCart}  className="flex items-center bg-[#9538E2] text-white p-2 font-bold rounded-2xl btn ">
+                    <button className="  ">
                       Add To Cart
                     </button>
                     <CiShoppingCart />
@@ -95,7 +108,7 @@ export default function DetailsPage() {
                   <button
                     onClick={handleWishList}
                     disabled={isPressed}
-                    className={`bg-white text-black border rounded-full text-2xl ${
+                    className={`bg-white text-black border rounded-full text-2xl btn ${
                       isPressed ? "opacity-50 cursor-not-allowed" : ""
                     }`}
                   >

@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import { NavLink, Outlet } from "react-router-dom";
 
 export default function Dashboard() {
   return (
     <>
+    <Helmet>
+        <title>Dashboard</title>
+        <link rel="icon" type="image/png" href="/public/assets/favicon-16x16.png" />
+      </Helmet>
     <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative s">
       <div className="hero-content text-center text-white">
         <div className="max-w-3xl">

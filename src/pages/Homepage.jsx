@@ -2,6 +2,7 @@ import { Link, useLocation, useLoaderData, Outlet } from "react-router-dom";
 
 import Heroimage from "../components/Heroimage";
 import Categories from "../components/Categories";
+import { Helmet } from "react-helmet-async";
 export default function Homepage() {
   const categories = useLoaderData();
 
@@ -10,6 +11,10 @@ export default function Homepage() {
 
   return (
     <>
+    <Helmet>
+        <title>Home</title>
+        <link rel="icon" type="image/png" href="/public/assets/favicon-16x16.png" />
+      </Helmet>
       <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative">
         <div className="hero-content text-center text-white">
           <div className="max-w-3xl">

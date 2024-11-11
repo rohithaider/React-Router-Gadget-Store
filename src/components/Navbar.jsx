@@ -27,8 +27,8 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end gap-2">
-        <a className="bg-white text-black border rounded-full"><CiShoppingCart /></a>
-        <a className="bg-white text-black border rounded-full"><CiHeart /></a>
+        <Link to="dashboard/cart" className="bg-white text-black border rounded-full"><CiShoppingCart /></Link>
+        <Link to="dashboard/wishlist" className="bg-white text-black border rounded-full"><CiHeart /></Link>
       </div>
     </div>
   );

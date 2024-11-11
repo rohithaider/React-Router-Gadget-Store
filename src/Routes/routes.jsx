@@ -7,6 +7,8 @@ import GadgetCards from "../components/GadgetCards";
 import DetailsPage from '../pages/DetailsPage';
 import CartPage from "../pages/CartPage";
 import WishListPage from "../pages/WishListPage";
+import ErrorPage from "../pages/Errorpage";
+
 
 
 
@@ -14,6 +16,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout/>,
+    errorElement:<ErrorPage/>,
     
     children:[
       {
