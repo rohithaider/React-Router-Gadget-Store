@@ -34,6 +34,75 @@
         "rating": 4.7
     },
     {
+        "product_id": "P003",
+        "product_title": "Google Pixel 8 Pro",
+        "product_image": "https://m.media-amazon.com/images/I/610q+UV1bcL._AC_UF894,1000_QL80_.jpg",
+        "category": "Smartphones",
+        "price": 1099,
+        "description": "Google's flagship phone with an incredible AI-powered camera and features.",
+        "specification": [
+            "6.7-inch LTPO OLED display",
+            "Google Tensor G3 chip",
+            "50MP Triple-camera system",
+            "5000mAh battery",
+            "Up to 512GB storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "P004",
+        "product_title": "OnePlus 11 5G",
+        "product_image": "https://m.media-amazon.com/images/I/41iGHD5gLoL._AC_.jpg",
+        "category": "Smartphones",
+        "price": 899,
+        "description": "The OnePlus 11 5G offers ultra-fast performance and stunning visuals.",
+        "specification": [
+            "6.7-inch Fluid AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "50MP Triple-camera system",
+            "5000mAh battery",
+            "Up to 256GB storage"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "P005",
+        "product_title": "Xiaomi 13 Pro",
+        "product_image": "https://m.media-amazon.com/images/I/51dZdyKtYpL._AC_UF894,1000_QL80_.jpg",
+        "category": "Smartphones",
+        "price": 999,
+        "description": "Xiaomi 13 Pro with Leica optics and a 120Hz AMOLED display.",
+        "specification": [
+            "6.73-inch AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "50MP Triple-camera system with Leica optics",
+            "4820mAh battery",
+            "Up to 512GB storage"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P006",
+        "product_title": "Samsung Galaxy Z Fold 5",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSiFIBNAWgtje0BfqfPsy4kYAf38q7Bcwdw&s",
+        "category": "Smartphones",
+        "price": 1799,
+        "description": "The Samsung Galaxy Z Fold 5 is a cutting-edge foldable smartphone that blends powerful performance with a flexible, large display for multitasking and immersive viewing experiences.",
+        "specification": [
+            "7.6-inch Dynamic AMOLED 2X foldable display",
+            "Snapdragon 8 Gen 2 for Galaxy",
+            "50MP Triple-camera system (12MP Ultra Wide, 50MP Main, 10MP Telephoto)",
+            "4400mAh battery with Super Fast Charging",
+            "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    
+    {
         "product_id": "L001",
         "product_title": "MacBook Pro 14\" M2",
         "product_image": "https://m.media-amazon.com/images/I/61lYIKPieDL._AC_UF894,1000_QL80_.jpg",
@@ -150,17 +219,17 @@
     {
         "product_id": "A002",
         "product_title": "Anker Soundcore Liberty 4",
-        "product_image": "https://gadgetnmusic.com/wp-content/uploads/2023/07/Untitled-design-2023-07-09T005815.642.jpg",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd6Ukr-riLpwOcxackA87VHCUTp7_5MkY90Q&s",
         "category": "Accessories",
-        "price": 149,
-        "description": "True wireless earbuds with noise-canceling technology.",
+        "price": 139,
+        "description": "True wireless earbuds with excellent sound quality.",
         "specification": [
-            "Active noise cancellation",
-            "Up to 10 hours of playtime",
+            "Active Noise Cancellation",
             "Bluetooth 5.3",
-            "Wireless charging case"
+            "Up to 8 hours of playtime",
+            "IPX5 water resistance"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.7
     }
 ]

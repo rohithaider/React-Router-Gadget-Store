@@ -8,6 +8,7 @@ import DetailsPage from '../pages/DetailsPage';
 import CartPage from "../pages/CartPage";
 import WishListPage from "../pages/WishListPage";
 import ErrorPage from "../pages/Errorpage";
+import HelpPage from "../pages/Help";
 
 
 
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
           }
 
         ]
+      },
+      {
+        path: 'help', 
+        element: <HelpPage/>
       },
       {
         path:"gadget/:product_id",

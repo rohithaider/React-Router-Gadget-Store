@@ -7,7 +7,7 @@ export default function Navbar() {
 
   const isHomePage = location.pathname ==="/"
   return (
-    <div className={`navbar ${isHomePage?"bg-[#9538E2] rounded-t-xl text-white":"bg-base-100"} `}>
+    <div className={`navbar ${isHomePage?"bg-[#9538E2] rounded-t-xl text-white mt-2":"bg-base-100 "} `}>
       <div className="navbar-start">
         
         <Link to="/" className="btn btn-ghost text-xl">Gadget&apos;s Heaven</Link>
@@ -24,11 +24,14 @@ export default function Navbar() {
           <li>
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
+          <li>
+            <NavLink to="help">Policy</NavLink>
+          </li>
         </ul>
       </div>
       <div className="navbar-end gap-2">
-        <Link to="dashboard/cart" className="bg-white text-black border rounded-full"><CiShoppingCart /></Link>
-        <Link to="dashboard/wishlist" className="bg-white text-black border rounded-full"><CiHeart /></Link>
+        <Link to="dashboard/cart" className="bg-white text-black border rounded-full text-xl"><CiShoppingCart /></Link>
+        <Link to="dashboard/wishlist" className="bg-white text-black border rounded-full text-xl"><CiHeart /></Link>
       </div>
     </div>
   );

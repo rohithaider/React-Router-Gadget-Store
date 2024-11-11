@@ -10,7 +10,7 @@ export default function Homepage() {
   const isHomePage = location.pathname === "/";
 
   return (
-    <>
+    <div className="">
     <Helmet>
         <title>Home</title>
         <link rel="icon" type="image/png" href="/public/assets/favicon-16x16.png" />
@@ -51,6 +51,6 @@ export default function Homepage() {
           <Outlet />
         </div>
       </div>
-    </>
+    </div>
   );
 }
