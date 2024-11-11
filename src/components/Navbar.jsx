@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 
@@ -15,14 +15,14 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to='/'>Home</Link>
+            <NavLink to='/' className={({isActive})=>`${isActive?"tab-active":""}`}>Home</NavLink>
           </li>
           <li>
-            <Link to="/statistics">Statistics</Link>
+            <NavLink to="/statistics">Statistics</NavLink>
           </li>
           
           <li>
-            <Link to="dashboard">Dashboard</Link>
+            <NavLink to="dashboard">Dashboard</NavLink>
           </li>
         </ul>
       </div>
