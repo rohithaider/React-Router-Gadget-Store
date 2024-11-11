@@ -41,8 +41,8 @@ export default function CartPage() {
           <div className="flex items-center gap-2">
             <h1 className="font-bold">Total Cost: ${totalPrice}</h1>
 
-            <div className="btn btn-outline flex items-center gap-2 border border-purple-600 rounded-3xl text-purple-600 p-2 ">
-              <button onClick={sortCartByPriceDesc}>Sort by Price</button>
+            <div onClick={sortCartByPriceDesc} className="btn btn-outline flex items-center gap-2 border border-purple-600 rounded-3xl text-purple-600 p-2 ">
+              <button >Sort by Price</button>
               <FaSortAmountDown />
             </div>
             <button
