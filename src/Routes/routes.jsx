@@ -5,6 +5,8 @@ import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
 import GadgetCards from "../components/GadgetCards";
 import DetailsPage from '../pages/DetailsPage';
+import CartPage from "../pages/CartPage";
+import WishListPage from "../pages/WishListPage";
 
 
 
@@ -38,7 +40,18 @@ const router = createBrowserRouter([
       },
       {
         path:"dashboard",
-        element:<Dashboard/>
+        element:<Dashboard/>,
+        children:[
+          {
+            path:'cart',
+            element:<CartPage/>
+          },
+          {
+            path:'wishlist',
+            element:<WishListPage/>
+          }
+
+        ]
       },
       {
         path:"gadget/:product_id",
